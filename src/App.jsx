@@ -6,6 +6,7 @@ import Projects from './pages/Projects'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Navbar from './components/Navigation/Navbar'
+import FullScreenNav from './components/Navigation/FullScreenNav'
 
 const App = () => {
   // const stairParentRef = useRef(null)
@@ -38,11 +39,12 @@ const App = () => {
   return (
     <div className='text-[#fff]'>
       <Navbar/>
-      <Routes>
+      <FullScreenNav/>
+      {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/agence' element={<Agence />} />
         <Route path='/projects' element={<Projects />} />
-      </Routes>
+      </Routes> */}
     </div>
   )
 }
